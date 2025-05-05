@@ -1,0 +1,47 @@
+.telechargement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-center;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #eaf4e9;
+    border-radius: 25px;
+  
+    .telechargementText {
+      font-size: 26px;
+      text-align: left;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .telechargementButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 25px;
+      background-color: #2b3c2c;
+      color: white;
+      font-size: 20px;
+    }
+  }
+  
+  .telechargementImage {
+    border-radius: 25px;
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .telechargementPicture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+  }
+  

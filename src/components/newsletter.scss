@@ -1,0 +1,28 @@
+.newsletterContainer {
+    position: relative;
+    height: 200px;
+    margin: 25px auto;
+  }
+  
+  .newsletterImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .newsletterText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .newsletterBtn {
+    background-color: transparent;
+  }
+  

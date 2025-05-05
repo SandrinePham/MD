@@ -1,0 +1,29 @@
+.presentation {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+  
+    .presentationPicture {
+      width: 50%;
+      border-radius: 25px;
+      object-fit: cover;
+      height: 500px;
+      border: 10px solid #eaf4e9;
+      object-position: center;
+    }
+  }
+  
+  .presentationText {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    font-size: 26px;
+    text-align: left;
+  }
+
+  .presentationTitle{
+    font-size: 16px;
+    text-align: justify;
+  }
+  

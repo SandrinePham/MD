@@ -1,0 +1,12 @@
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  padding: 10px;
+}

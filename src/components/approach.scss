@@ -1,0 +1,22 @@
+.approachContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.approachContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.approachTitle {
+  text-align: justify;
+}
+
+.approachText {
+  margin: 0;
+}
