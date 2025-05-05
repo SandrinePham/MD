@@ -9,7 +9,6 @@ import Layout from "../layouts/Layout";
 
 function AppRouter() {
   return (
-    <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -19,7 +18,6 @@ function AppRouter() {
           <Route path="/prestations" element={<Prestations />} />
         </Route>{" "}
       </Routes>
-    </BrowserRouter>
   );
 }
 
