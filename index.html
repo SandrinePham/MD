@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/MD/md_green.svg" />
+    <link
+      id="favicon"
+      rel="icon"
+      type="image/svg+xml"
+      href="/MD/icon_lightmode.svg"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,8 +16,24 @@
       rel="stylesheet"
     />
     <title>Mélanie DIZET</title>
-    <script type="module" crossorigin src="/MD/assets/index-DCHNn6Lr.js"></script>
-    <link rel="stylesheet" crossorigin href="/MD/assets/index-P8LBt1Jc.css">
+<script>
+  const updateFavicon = (isDark) => {
+    const favicon = document.getElementById("favicon");
+    if (!favicon) return;
+
+    favicon.href = isDark ? "/icon_darkmode.svg" : "/icon_lightmode.svg";
+  };
+
+  const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+  updateFavicon(darkModeMediaQuery.matches);
+
+  darkModeMediaQuery.addEventListener("change", (e) => {
+    updateFavicon(e.matches);
+  });
+</script>
+    <script type="module" crossorigin src="/MD/assets/index-CapLW_Jr.js"></script>
+    <link rel="stylesheet" crossorigin href="/MD/assets/index-ejZzCY8L.css">
   </head>
   <body>
     <div id="root"></div>
