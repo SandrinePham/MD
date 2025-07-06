@@ -1,0 +1,33 @@
+@use "../assets/style/variantes.scss" as *;
+
+.topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background-color: $background-color;
+  z-index: 1001; // plus haut que le header sticky
+}
+
+.header {
+  position: sticky;
+  top: 30px; // coller juste sous topBar
+  z-index: 1000;
+  height: 70px;
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  border: 2px solid $background-color;
+}
+
+.headerBottomBar {
+  position: fixed;
+  top: 100px; // juste sous topBar + header (30 + 70)
+  left: 0;
+  right: 0;
+  height: 20px;
+  background-color: $background-color;
+  z-index: 999; // sous header mais au-dessus du contenu
+}
